@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="unsafe-url">
+    <title>双级导航布局示例</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- 左侧导航栏 -->
+    <nav class="sidebar">
+        <ul>
+            <li class="menu-item" data-target="home.html">首页</li>
+            <li class="menu-item has-submenu">图片
+                <ul class="submenu">
+                    <li class="submenu-item" data-target="product1.html">P站日新</li>
+                    <li class="submenu-item" data-target="product2.html">产品 2</li>
+                    <li class="submenu-item" data-target="product3.html">产品 3</li>
+                </ul>
+            </li>
+            <li class="menu-item has-submenu">关于我们
+                <ul class="submenu">
+                    <li class="submenu-item" data-target="company.html">公司介绍</li>
+                    <li class="submenu-item" data-target="team.html">团队成员</li>
+                </ul>
+            </li>
+            <li class="menu-item" data-target="collection.html">收藏</li>
+        </ul>
+    </nav>
+
+    <!-- 右侧内容区域 -->
+    <div class="content" id="content">
+        <!-- 动态加载内容将插入这里 -->
+        <div id="default-content">
+            <h1>欢迎来到首页</h1>
+            <p>这是首页内容。</p>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- 模态窗口 -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="imgModal">
+    <div id="caption"></div>
+</div>
+
+
+
+
+
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>

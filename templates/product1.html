@@ -1,0 +1,56 @@
+<!-- product1.html -->
+<div class="product1-container">
+
+
+    <!-- 顶部导航栏 -->
+    <nav class="top-nav">
+        <div class="nav-left">
+            <h2>P站日首次登场</h2>
+        </div>
+        <div class="nav-center" id="selected-time">
+            <span>选择时间</span>
+        </div>
+        <div class="nav-right">
+            <input type="date" id="calendar">
+        </div>
+    </nav>
+
+    <!-- 图片展示部分 -->
+    <div class="image-gallery">
+        <!-- 动态加载的图片将插入这里 -->
+        <!-- 示例静态内容，可通过JavaScript动态生成 -->
+
+
+
+        <!-- 更多图片项可以动态添加 -->
+    </div>
+
+    <!-- 下部工具栏 -->
+    <div class="toolbar">
+        <button id="scrape-data-btn">爬取数据</button>
+        <button id="upload-data-btn">上传选择的图片信息</button>
+    </div>
+
+    <!-- 右下角刷新按钮 -->
+    <button id="refresh-data-btn" class="refresh-button">刷新数据</button>
+
+
+
+</div>
+
+    <!-- 加载提示 -->
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>正在爬取数据，请稍候...</p>
+        </div>
+    </div>
+
+    <!-- 加载提示 -->
+    <div id="loadingOverlay1" class="loading-overlay">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>正在上传中，请稍候...</p>
+        </div>
+    </div>
+
